@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <!--Jquery -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" class="stylesheet">
+    <meta charset="UTF-8">
+    <title>Train Timer</title>
+</head>
+<body>
+
+<div class="container">
+    <h3 class="panel-title">When Is My Train!</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency(min)</th>
+                            <th>Train Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                        </thead>
+                        <tbody id="added-train">
+                        <tr>
+                            <td id="train-name"></td>
+                            <td id="added-destination"></td>
+                            <td id="added-frequency"></td>
+                            <td id="added-arrival"></td>
+                            <td id="added-minutes-away"></td>
+                        </tr>
+                        </tbody >
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Track a New Train!</h3>
+                </div>
+                <div class="panel-body">
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="text">Train Name</label>
+                            <input type="text" class="form-control" id="trainName">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="text">Destination</label>
+                            <input type="text" class="form-control" id="destination">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="text">First Train Time(HH:Mmm)</label>
+                            <input type="nubmer" class="form-control" id="trainTime">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="text">Frequency</label>
+                            <input type="nubmer" class="form-control" id="frequency">
+
+                        </div>
+
+                        <button type="submit" class="btn btn-default" id="newTrain">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
