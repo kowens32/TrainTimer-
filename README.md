@@ -1,2 +1,2 @@
 # TrainTimer-
-Calculate time and store data in Firebase
+Calculate time using Moment.js and store data in Firebase
